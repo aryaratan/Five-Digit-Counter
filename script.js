@@ -19,7 +19,7 @@ function startCounter(){
     var nxt = document.querySelectorAll('.next');
     var i = 0;
     interval = setInterval(function(){
-        button.addEventListener('click',reset);
+        
         if(i == number ){
             window.alert("Counter is Stopped");
             clearInterval(interval);
@@ -31,12 +31,6 @@ function startCounter(){
          
 }
 
-function resetNumbers(currentNos, nextNos, end) {
-    for(var i=0; i<end; ++i) {
-        currentNos[i].innerText = 0;
-        nextNos[i].innerText = 1;
-    }
-}
 
 
 function animate(curr ,next, j){
